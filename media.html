@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navber{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            text-align: center;
+            align-items: center;
+            
+            
+        }
+        ul li{
+            display: inline-block;
+            margin: 20px ;
+            color:cornsilk;
+            list-style: none;
+        }
+        marquee{
+            
+            text-decoration: none;
+
+        }
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+        
+
+       
+    }
+    input[type='search']{
+        box-shadow: 0px 1px 3px cornsilk;
+        height: 30px;
+        width: 300px;
+    }
+    .btn{
+        height: 30px;
+        width: 70px;
+        font-weight: 400;
+        box-shadow: 0px 1px 3px cornsilk;
+    }
+    .content{
+    
+        margin-top: 60px;
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    .content{
+        background-image: url("op.webp");
+        margin-top: 0;
+        height: 100vh;
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: black;
+        opacity: .9;
+        
+    }
+    .content1{
+        position: absolute;
+        top: 270px;
+        width: 400px;
+    padding-left: 15.8em;    
+    }
+    .content1 h1{
+        color: cornsilk;
+        font-weight: 900;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .content img{
+        box-shadow: 4px 4px 4px;
+    }
+    .content p{
+        color: cornsilk;
+        text-decoration: 0px 0px 0.5px ;
+        background-color: transparent;
+        font-weight: 900;
+        line-height: 29px;
+        height: 490px;
+    }
+    #it{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 4em;
+        background-color: burlywood;
+        box-shadow: 9px 9px 9px;
+        margin-bottom: 2em;
+        transition: .7s;
+    }
+    #it:hover{
+transform: scale(1.2);
+    }
+    .items{
+        display: flex;
+        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
+       }
+    .item1{
+        width: 60%;
+        text-align: center;
+    }
+    .item1 h1{
+        font-size: 29px;
+    }
+    .item1 p{
+        font-weight: 800;
+
+        letter-spacing: 3px;
+    }
+    span{
+        margin: 0px 20px;
+        font-size: 20px;
+        cursor: pointer;
+        display: none;
+    }
+    .item2 img{
+        height: 400px;
+    }
+
+    
+    @media screen and (max-width:780px){
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center ;
+    background-repeat: no-repeat;
+}
+.content1{
+    top: 37em;
+    padding-left: 0px;
+    
+}
+.content1 h1{
+    top:12px;   
+    font-size: 22px;
+    margin-right:3em;
+}
+.content1 p{
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-size: 10px;
+    text-align: center;
+    width: 300px;
+    padding-left: 2em;
+
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    
+}
+span{
+    display: block;
+    color: cornsilk;
+}
+ul li{
+    display: block;
+}
+ul{
+    display: none;
+}
+input[type="search"]{
+    width: 80px;
+    height: 20px;
+    margin: 0;
+}
+.btn{
+    width: 45px;
+    height: 20px;
+    font-weight: 300;
+}
+marquee{
+width: 30px;
+}
+    }
+    @media screen and (min-width: 769px) {
+        input[type="search"]{
+    width: 200px;
+    height: 20px;
+    margin: 0;
+}
+.btn{
+    width: 45px;
+    height: 20px;
+    font-weight: 300;
+}
+.content1{
+        position: absolute;
+        top: 400px;
+        width: 400px;
+    padding-left: 6.8em;
+    line-height: 12px;    
+ 
+    }
+
+}   
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav >
+            <div class="navber">
+    <div class="logo">
+    <marquee behavior="" direction=""> <a href="">Rahul Kumar</a></marquee>
+    </div>
+    <div class="search">
+        <form action="">
+        <input type="search" placeholder="search" name="search">
+        <button class="btn">search</button>
+    </div>
+</form>
+    <div class="men">
+        <span onclick="myFunction()"  style="color: cornsilk; " >&#9776;</span>
+     <ul id="menu">
+     <li>Home</li>
+     <li>
+        <select name="" id="" style="width:75px ;">
+            <option value="">Courses</option>
+            <option value="">Full Stack Web Development</option>
+            <option value=""> Career kickstarter</option>
+            
+        </select>
+     </li>
+     <li>Hire Talent</li>
+     <li>Blog</li>
+     <li>ISA</li>
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" style="color: cornsilk;"></i>
+      </a>
+     </ul>
+    </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="mp">
+        <section class="content">
+            
+           <div class="content1">
+            <h1>WHAT IS SOFT PAINTING?</h1>
+            <p>The term soft painting might confuse many people because of its different aspects. However, there are some interesting features of soft painting because it is still relatively new to the art world. It was founded by Calman Shemi and has created a lot of original art that people have been enjoying worldwide.To find out more about soft painting, continue reading down below. </p>
+        </div>
+        
+        </section>
+    </div>
+    </main>
+    <section id="it">
+        <div class="items">
+            <div class="item1">
+                <h1>Hi this is </h1><br>    
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odit nobis libero voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odit nobis libero voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odit nobis libero voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odit nobis libero voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odit nobis libero voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odit nobis libero voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odit nobis libero voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odit nobis libero voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odit nobis libero voluptas 
+
+                </p>
+            </div>
+<div class="item2">
+    <img src="https://th.bing.com/th/id/OIP.Hcwqx1HxAr1GSIow-uq99gHaGV?w=241&h=206&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+</div>
+        </div>
+    </section>
+    <script>
+        function myFunction(){
+            var x =document.getElementById("menu");
+            if(x.style.display =="block"){
+                x.style.display="none";   
+            }
+            else{
+                x.style.display="block"
+            }
+        }
+    </script>
+</body>
+</html>
